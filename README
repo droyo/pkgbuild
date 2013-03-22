@@ -1,0 +1,24 @@
+These PKGBUILD scripts will build Arch Linux packages
+of unix utilities that I find exceedingly useful. To
+build any package, you have the Arch Build System
+installed:
+
+	https://wiki.archlinux.org/index.php/Arch_Build_System
+
+A package may be built like so:
+	$ cd _package-name_
+	$ makepkg
+
+All packages require the musl libc:
+	http://musl-libc.org/
+
+There are several musl packages an the Arch User Repository
+for you to install, such as 
+	https://aur.archlinux.org/packages/musl
+
+If you run into any problems running the software in these
+package, before taking it up with the author, ensure that
+you see the same issue when using software built according
+to the authors' instructions on the respective web sites.
+I am happy to correct any errors in my packaging and don't
+want the authors being bugged over my mistakes.
