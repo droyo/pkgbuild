@@ -1,7 +1,7 @@
 # Contributor: Roberto Alsina <ralsina@kde.org>
 pkgname=ucspi-ipc-musl
 pkgver=0.67
-pkgrel=1
+pkgrel=2
 pkgdesc="Command-line tools for building local-domain client-server applications."
 url="http://www.superscript.com/ucspi-ipc/"
 arch=('i686' 'x86_64')
