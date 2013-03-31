@@ -1,5 +1,5 @@
 # Maintainer: David Arroyo <droyo@aqwari.us>
-pkgname=skalibs-musl
+pkgname=skalibs
 pkgver=1.3.0
 pkgrel=1
 pkgdesc="A set of general-purpose C programming libraries"
@@ -7,16 +7,11 @@ arch=('i686' 'x86_64')
 url="http://www.skarnet.org/software/skalibs"
 license=('custom:ISC')
 changelog=CHANGELOG
-makedepends=(musl)
-provides=(skalibs)
 source=(${url}/skalibs-$pkgver.tar.gz)
 md5sums=('25865de0e545fe29fa80a68314fddb38')
 
 build() {
   cd "$srcdir/prog/skalibs-$pkgver"
-  echo musl-gcc                 > conf-compile/conf-cc
-  echo musl-gcc -static         > conf-compile/conf-ld
-  echo musl-gcc                 > conf-compile/conf-dynld
   echo /usr/bin                 > conf-compile/conf-install-command
   echo /usr/lib/skalibs         > conf-compile/conf-install-library
   echo /usr/include/skalibs     > conf-compile/conf-install-include
